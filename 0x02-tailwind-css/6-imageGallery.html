@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid and Flexbox Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @media (max-width: 768px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+      <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+      <section class="lg:col-span-2 flex">
+        <div class="p-4 bg-red-200 w-1/2">Flexbox Item 1</div>
+        <div class="p-4 bg-red-400 w-1/2">Flexbox Item 2</div>
+      </section>
+      <aside class="bg-green-200 p-4">Sidebar</aside>
+    </main>
+
+    <section class="mt-4">
+      <h2 class="text-center text-3xl font-bold capitalize">
+        Responsive Image Gallery
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+        <img
+          src="https://picsum.photos/seed/1/500/300"
+          alt="Random image 1"
+          class="w-full"
+        />
+        <img
+          src="https://picsum.photos/seed/2/500/300"
+          alt="Random image 2"
+          class="w-full"
+        />
+        <img
+          src="https://picsum.photos/seed/3/500/300"
+          alt="Random image 3"
+          class="w-full"
+        />
+        <img
+          src="https://picsum.photos/seed/4/500/300"
+          alt="Random image 4"
+          class="w-full"
+        />
+        <img
+          src="https://picsum.photos/seed/5/500/300"
+          alt="Random image 5"
+          class="w-full"
+          class="w-full"
+        />
+        <img
+          src="https://picsum.photos/seed/6/500/300"
+          alt="Random image 6"
+          class="w-full"
+        />
+        <img
+          src="https://picsum.photos/seed/7/500/300"
+          alt="Random image 7"
+          class="w-full"
+        />
+        <img
+          src="https://picsum.photos/seed/8/500/300"
+          alt="Random image 8"
+          class="w-full"
+        />
+        <img
+          src="https://picsum.photos/seed/9/500/300"
+          alt="Random image 9"
+          class="w-full"
+        />
+        <img
+          src="https://picsum.photos/seed/10/500/300"
+          alt="Random image 10"
+          class="w-full"
+        />
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+      <p>&copy; 2025 Shadrack's Blog</p>
+    </footer>
+  </body>
+</html>
