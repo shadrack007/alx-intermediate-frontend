@@ -1,0 +1,18 @@
+# SASS INSTALLATION VIA NODE PACKAGE MANAGER (npm)
+
+1. Install node
+   Instruction: Go to <https://nodejs.org> and download/install the latest LTS version.
+
+2. Install Sass global
+
+   ```bash
+   npm install -g sass
+   ```
+
+3. Verify Installation
+
+   ```bash
+   sass --version
+   ```
+
+   You should see something like 1.89.0 or similar
